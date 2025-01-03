@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .layout
+        {
+           text-align: center;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap:20px;
+            grid-template-areas: 'h h h h h'
+            'sb1 m m m sb2'
+            'f f f f f';
+            grid-template-rows: 10vh 80vh 10vh;
+            
+
+        }
+        .layout div{
+            border:2px solid black;
+            font-size:2em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header
+        {
+            background-color: crimson;
+            grid-area: h;
+            text-align: center;
+        }
+        .sidebar1
+        {
+            background-color: rgb(87, 220, 20);
+            grid-area: sb1 ;
+        } 
+        .main
+        {
+            background-color: rgb(53, 20, 220);
+            grid-area: m ;
+        } 
+        .sidebar2
+        {
+            background-color: rgb(102, 92, 94);
+            grid-area: sb2 ;
+        } 
+        .footer
+        {
+            background-color: rgb(20, 193, 220); 
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="header">header</div>
+        <div class="sidebar1">Sidebar1</div>
+        <div class="main">MainMenu</div>
+        <div class="sidebar2">Sidebar2</div>
+        <div class="footer">footer</div>
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1
+        {
+            background-color: blue;
+            width:50px;
+            height:50px;
+            border:2px solid black;
+            padding: 20px;
+            text-align: center;
+        
+        }
+        .flex
+        {
+            display: flex;
+            /*align-items:center;/*top to bottom*/
+            align-content:center;/*top to bottom*/
+
+           /* justify-content:center;/*left to right*/
+            flex-wrap: no-wrap;
+            width:100%;
+            height:200px;
+            padding: 20px;
+            background-color: brown;
+          /*  flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;*/
+            
+
+        }
+        div:nth-child(6)
+        {
+            /*align-self: flex-end;*/
+          /*  flex-grow: 4;*/
+             flex-shrink: 2;
+             flex-basis: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div id="box1">1</div>
+        <div id="box1">2</div>
+        <div id="box1">3</div>
+        <div id="box1">4</div>
+        <div id="box1">5</div>
+        <div id="box1">6</div>
+        <div id="box1">7</div>
+        <div id="box1">8</div>
+        <div id="box1">9</div>
+        <div id="box1">10</div>
+        <div id="box1">11</div>   
+        <div id="box1">12</div>  
+         <div id="box1">13</div>  
+          <div id="box1">14</div>  
+           <div id="box1">15</div> 
+             <div id="box1">16</div> 
+               <div id="box1">17</div>  
+                <div id="box1">18</div> 
+                  <div id="box1">19</div>
+                  <div id="box1">20</div>
+
+    </div>
+</body>
+</html>
